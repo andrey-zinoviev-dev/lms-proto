@@ -1,0 +1,56 @@
+.editorContent {
+  outline: none;
+  min-height: 200px;
+  padding: 1rem;
+  max-width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.editorContent :global(p) {
+  margin: 0 0 0.75em;
+}
+
+.editorContent :global(p:last-child) {
+  margin-bottom: 0;
+}
+
+.editorContent :global(h1),
+.editorContent :global(h2),
+.editorContent :global(h3) {
+  margin: 1em 0 0.5em;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.editorContent :global(h1) {
+  font-size: 1.5rem;
+}
+
+.editorContent :global(h2) {
+  font-size: 1.25rem;
+}
+
+.editorContent :global(h3) {
+  font-size: 1.125rem;
+}
+
+.editorContent :global(ul),
+.editorContent :global(ol) {
+  margin: 0.75em 0;
+  padding-left: 1.5em;
+}
+
+.editorContent :global(blockquote) {
+  border-left: 4px solid #e5e7eb;
+  margin: 0.75em 0;
+  padding-left: 1em;
+  color: #6b7280;
+}
+
+.editorContent :global(code) {
+  font-size: 0.875em;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  background: #f3f4f6;
+}

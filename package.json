@@ -8,9 +8,16 @@
     "start": "next start",
     "lint": "eslint"
   },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
   "dependencies": {
     "@prisma/adapter-pg": "^7.4.1",
     "@prisma/client": "^7.4.1",
+    "@tiptap/extension-unique-id": "^3.20.0",
+    "@tiptap/pm": "^3.20.0",
+    "@tiptap/react": "^3.20.0",
+    "@tiptap/starter-kit": "^3.20.0",
     "dotenv": "^17.3.1",
     "next": "16.1.6",
     "pg": "^8.19.0",

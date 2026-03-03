@@ -1,0 +1,143 @@
+{
+    "courses": [
+      { "id": "seed-course-ts", "title": "Introduction to TypeScript", "authorId": "seed-author" },
+      { "id": "seed-course-react", "title": "React Fundamentals", "authorId": "seed-author" },
+      { "id": "seed-course-node", "title": "Node.js and the Backend", "authorId": "seed-author" }
+    ],
+    "lessons": [
+      {
+        "id": "seed-lesson-ts-1",
+        "title": "What is TypeScript?",
+        "courseId": "seed-course-ts",
+        "contentJson": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": { "id": "block-intro" },
+              "content": [{ "type": "text", "text": "TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. It adds optional static types, interfaces, and better tooling to help you catch errors early and scale your codebase." }]
+            },
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "You can adopt TypeScript gradually: start with .ts files alongside existing .js, and enable strictness over time." }]
+            }
+          ]
+        }
+      },
+      {
+        "id": "seed-lesson-ts-2",
+        "title": "Basic Types",
+        "courseId": "seed-course-ts",
+        "contentJson": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": { "id": "block-primitives" },
+              "content": [{ "type": "text", "text": "Use : string, : number, and : boolean to annotate variables. Arrays are Type[] or Array<Type>. For mixed types, use unions (A | B) or unknown." }]
+            },
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "Interfaces and type aliases describe object shapes. Prefer interface for extensibility." }]
+            }
+          ]
+        }
+      },
+      {
+        "id": "seed-lesson-ts-3",
+        "title": "Functions and Generics",
+        "courseId": "seed-course-ts",
+        "contentJson": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "Function parameters and return types can be annotated. Use generics (e.g. function identity<T>(x: T): T) to keep types flexible and reusable." }]
+            }
+          ]
+        }
+      },
+      {
+        "id": "seed-lesson-react-1",
+        "title": "Components and JSX",
+        "courseId": "seed-course-react",
+        "contentJson": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": { "id": "block-jsx" },
+              "content": [{ "type": "text", "text": "Components are functions that return JSX. JSX looks like HTML but compiles to React.createElement calls. Always start component names with a capital letter so React treats them as components, not DOM tags." }]
+            },
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "Use the children prop to compose components. Fragments (<></>) let you group nodes without extra DOM elements." }]
+            }
+          ]
+        }
+      },
+      {
+        "id": "seed-lesson-react-2",
+        "title": "Props and State",
+        "courseId": "seed-course-react",
+        "contentJson": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "Props are read-only inputs to a component. State is mutable data managed inside the component with useState. Lifting state up means moving it to a common parent when multiple components need to share it." }]
+            }
+          ]
+        }
+      },
+      {
+        "id": "seed-lesson-react-3",
+        "title": "Hooks and Effects",
+        "courseId": "seed-course-react",
+        "contentJson": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "useEffect runs after render. Specify a dependency array to control when it runs. Use cleanup functions to avoid leaks (e.g. unsubscribing from events or clearing timers)." }]
+            }
+          ]
+        }
+      },
+      {
+        "id": "seed-lesson-node-1",
+        "title": "Modules and require vs import",
+        "courseId": "seed-course-node",
+        "contentJson": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "attrs": { "id": "block-modules" },
+              "content": [{ "type": "text", "text": "Node uses CommonJS by default (require/module.exports). ES modules (import/export) are supported with \"type\": \"module\" in package.json or .mjs extension. Know which system your dependencies expect." }]
+            }
+          ]
+        }
+      },
+      {
+        "id": "seed-lesson-node-2",
+        "title": "Async and the Event Loop",
+        "courseId": "seed-course-node",
+        "contentJson": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "Node is single-threaded and uses an event loop. Use callbacks, Promises, or async/await for I/O. Avoid blocking the loop with CPU-heavy work; use worker threads or child processes for that." }]
+            }
+          ]
+        }
+      }
+    ],
+    "annotations": [
+      { "blockId": "block-intro", "userId": "seed-user-1", "type": "UNCLEAR_TERM", "lessonId": "seed-lesson-ts-1" },
+      { "blockId": "block-primitives", "userId": "seed-user-1", "type": "NEEDS_EXAMPLE", "lessonId": "seed-lesson-ts-2" },
+      { "blockId": "block-jsx", "userId": "seed-user-1", "type": "NEEDS_EXAMPLE", "lessonId": "seed-lesson-react-1" },
+      { "blockId": "block-modules", "userId": "seed-user-1", "type": "TOO_COMPLEX", "lessonId": "seed-lesson-node-1" }
+    ]
+  }
